@@ -1,0 +1,106 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 0.7s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #ffffff;
+}
+
+nav a.active {
+  color: #ffffff;
+  text-shadow: 0 0 15px #ffffff;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 80vh;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 25px 35px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+img {
+  border-radius: 15px;
+  max-width: 100%;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.glow {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+  color: white;
+}
+.discord-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #7289da; /* kolor Discorda */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #7289da;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.discord-btn:hover {
+  box-shadow: 0 0 20px #7289da;
+  transform: scale(1.05);
+}
